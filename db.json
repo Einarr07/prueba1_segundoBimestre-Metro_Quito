@@ -34,6 +34,33 @@
       "maquinista": "asd",
       "detalles": "asd",
       "id": "cad60901-82c8-4c1c-a2a6-41fa66c199e4"
+    },
+    {
+      "nombre": "Marianas",
+      "sector": "Quito",
+      "salida": "Labrador",
+      "llegada": "Marianas",
+      "maquinista": "Hernesto",
+      "detalles": "Hernesto es chevere",
+      "id": "b51588d0-2397-441f-b1a4-2f05b9783168"
+    },
+    {
+      "nombre": "asdfa",
+      "sector": "sd",
+      "salida": "sdf",
+      "llegada": "sdf",
+      "maquinista": "sdf",
+      "detalles": "sdf sdf",
+      "id": "30ea6cbe-32be-43ae-9773-5231b129b0d7"
+    },
+    {
+      "nombre": "Ejido",
+      "sector": "asd",
+      "salida": "asd",
+      "llegada": "asd",
+      "maquinista": "asd",
+      "detalles": "asd",
+      "id": "477bab69-1a11-4123-b034-f9deee302273"
     }
   ]
 }
