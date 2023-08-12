@@ -18,13 +18,22 @@
   },
   "metro": [
     {
-      "nombre": "Parque",
-      "sector": "Ejido",
-      "salida": "Norte",
-      "llegada": "Sur",
-      "maquinista": "Juan",
-      "detalles": "qwe",
+      "nombre": "Calderon",
+      "sector": "Quito",
+      "salida": "Ofelia",
+      "llegada": "Marianas",
+      "maquinista": "Hernesto",
+      "detalles": "Hernesto es una buena persona ",
       "id": "f259f24a-45cd-452a-8e69-b339115e217b"
+    },
+    {
+      "nombre": "sad",
+      "sector": "asd",
+      "salida": "asd",
+      "llegada": "asd",
+      "maquinista": "asd",
+      "detalles": "asd",
+      "id": "cad60901-82c8-4c1c-a2a6-41fa66c199e4"
     }
   ]
 }
