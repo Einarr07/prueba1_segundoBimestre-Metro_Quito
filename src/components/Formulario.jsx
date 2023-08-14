@@ -2,8 +2,20 @@ import { v4 as uuidv4} from "uuid"
 import Mensajes from "./Mensajes"
 import { useState } from "react"
 import { useEffect } from 'react'
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+
 
 export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
+    const validationSchema = Yup.object().shape({
+  nombre: Yup.string().required('El nombre es obligatorio'),
+  sector: Yup.string().required('El sector es obligatorio'),
+  salida: Yup.string().required('El punto de salida es obligatorio'),
+  llegada: Yup.string().required('El punto de llegada es obligatorio'),
+  maquinista: Yup.string().required('El nombre del maquinista es obligatorio'),
+  detalles: Yup.string().required('Los detalles son obligatorios'),
+});
+
     const [error, setError] = useState(false);
     const [mensaje, setMensaje] = useState(false);
     const [form, setForm] = useState({
@@ -109,7 +121,11 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
     console.log("Id antes del return:", idMetro);
     console.log("form antes del return:", form);
     return (
-        //<Formik initialValues={form} onSubmit={handleFormSubmit}>
+        <Formik
+        initialValues={form}
+        validationSchema={validationSchema}
+        onSubmit={handleSubmit}>
+            
         <form onSubmit={handleSubmit}>
                 {error && <Mensajes tipo="bg-red-900">Existen campos vacíos</Mensajes>}
                 {mensaje && <Mensajes tipo="bg-green-900">Registro exitoso</Mensajes>}
@@ -127,7 +143,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='nombre'
                     value={form.nombre || ""} 
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='nombre'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
 
             <div>
@@ -142,7 +161,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='sector'
                     value={form.sector || ""}
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='sector'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
 
             <div>
@@ -157,7 +179,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='salida'
                     value={form.salida || ""}
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='salida'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
 
             <div>
@@ -172,7 +197,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='llegada'
                     value={form.llegada || ""}
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='llegada'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
 
             <div>
@@ -187,7 +215,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='maquinista'
                     value={form.maquinista || ""}
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='maquinista'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
             <div>
                 <label
@@ -200,7 +231,10 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
                     name='detalles'
                     value={form.detalles || ""}
                     onChange={handleChange}
-                />
+                /><ErrorMessage
+                name='detalles'
+                component='div'
+                className='text-red-500 text-xs'/>
             </div>
 
             <input
@@ -210,6 +244,6 @@ export const Formulario = ({ setEstado, idMetro, setIdMetro}) => {
               hover:bg-red-900 cursor-pointer transition-all'
               value={form.id ? "Actualizar ruta" : "Registrar ruta"} />
         </form>
-        //</Formik>
+        </Formik>
     );
 };

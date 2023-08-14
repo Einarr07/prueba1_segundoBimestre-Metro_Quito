@@ -18,16 +18,7 @@
   },
   "metro": [
     {
-      "nombre": "Calderonfgh",
-      "sector": "Quitofgh",
-      "salida": "Ofeliafgh",
-      "llegada": "Marianasfgh",
-      "maquinista": "Hernestofgh",
-      "detalles": "Hernesto es una buena persona fgh",
-      "id": "f259f24a-45cd-452a-8e69-b339115e217b"
-    },
-    {
-      "nombre": "Marianas",
+      "nombre": "Pablo",
       "sector": "Quito",
       "salida": "Labrador",
       "llegada": "Marianas",
@@ -37,7 +28,7 @@
     },
     {
       "nombre": "Quitumbe",
-      "sector": "SanCristobal",
+      "sector": "2",
       "salida": "la ecutoriana",
       "llegada": "universidad EPN",
       "maquinista": "Marco",
@@ -52,6 +43,33 @@
       "maquinista": "JOSE-ALFREDO",
       "detalles": "d",
       "id": "43597b6e-92f6-4f14-b88a-66460298a88b"
+    },
+    {
+      "nombre": "Pablo",
+      "sector": "Ejidosadfsadf",
+      "salida": "Nortesdafasdf",
+      "llegada": "Surdfgf",
+      "maquinista": "Juan",
+      "detalles": "Juannove",
+      "id": "e891a18e-cf8a-4b68-aa23-7a1c49b52f78"
+    },
+    {
+      "nombre": "sdf",
+      "sector": "sdf",
+      "salida": "sdf",
+      "llegada": "sdf",
+      "maquinista": "asdf",
+      "detalles": "sagfjhfgjhgj",
+      "id": "5f931a0b-2702-4339-81cd-c617c977f11e"
+    },
+    {
+      "nombre": "Machachi",
+      "sector": "Sangolquiasdfsadf",
+      "salida": "EPNasdfsadf",
+      "llegada": "Machachiasdfsa",
+      "maquinista": "Ericksadfsa",
+      "detalles": "Erickactualuizaasdfsdaf",
+      "id": "4cf5bdb3-18a3-49e9-95dd-9d203457d344"
     }
   ]
 }
