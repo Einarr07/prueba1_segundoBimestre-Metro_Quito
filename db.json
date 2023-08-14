@@ -18,12 +18,12 @@
   },
   "metro": [
     {
-      "nombre": "Calderon",
-      "sector": "Quito",
-      "salida": "Ofelia",
-      "llegada": "Marianas",
-      "maquinista": "Hernesto",
-      "detalles": "Hernesto es una buena persona ",
+      "nombre": "Calderonfgh",
+      "sector": "Quitofgh",
+      "salida": "Ofeliafgh",
+      "llegada": "Marianasfgh",
+      "maquinista": "Hernestofgh",
+      "detalles": "Hernesto es una buena persona fgh",
       "id": "f259f24a-45cd-452a-8e69-b339115e217b"
     },
     {
@@ -45,22 +45,13 @@
       "id": "ae3e88b4-917d-440b-b68d-667fa681d200"
     },
     {
-      "nombre": "Quitumbe",
-      "sector": "Puente 8",
-      "salida": "Capuli",
-      "llegada": "universidad EPN",
-      "maquinista": "Marco",
-      "detalles": "qerthfd",
-      "id": "9b4fa2e4-2f4d-4c7c-9d64-1d47767fdfaa"
-    },
-    {
-      "nombre": "Machachi",
-      "sector": "PichinCHA",
-      "salida": "EPN",
-      "llegada": "Machachi",
-      "maquinista": "Katherine",
-      "detalles": "es katherin pero se esribe katherine",
-      "id": "9a47bfe2-b773-4d99-b40f-d2eae3285607"
+      "nombre": "NORTE",
+      "sector": "QUITO-IBARRA",
+      "salida": "QUITO",
+      "llegada": "IBARRA",
+      "maquinista": "JOSE-ALFREDO",
+      "detalles": "d",
+      "id": "43597b6e-92f6-4f14-b88a-66460298a88b"
     }
   ]
 }
