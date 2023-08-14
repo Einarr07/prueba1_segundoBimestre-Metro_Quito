@@ -16,6 +16,12 @@ export const Formulario = ({ setEstado, idMetro }) => {
         detalles: ""
     });
 
+    const handleChange = async (e) => {
+        setform({...form,
+            [e.target.name]:e.target.value
+        })
+    }
+
     useEffect(() => {
         if (idMetro) {
             (async function (idMetro) {
@@ -23,7 +29,7 @@ export const Formulario = ({ setEstado, idMetro }) => {
                     const respuesta = await (
                         await fetch(`http://localhost:3000/metro/${idMetro}`)
                     ).json();
-                    const {
+                    const{
                         id,
                         nombre,
                         sector,
@@ -31,7 +37,7 @@ export const Formulario = ({ setEstado, idMetro }) => {
                         llegada,
                         maquinista,
                         detalles
-                    } = respuesta;
+                    } = respuesta 
                     setForm({
                         ...form,
                         nombre,
@@ -49,7 +55,9 @@ export const Formulario = ({ setEstado, idMetro }) => {
         }
     }, [idMetro]);
 
-    const handleFormSubmit = async (data) => {
+  
+
+    const handleFormSubmit = async (data, {resetForm}) => {
         if (Object.values(data).some((value) => value === "")) {
             setError(true);
             setTimeout(() => {
@@ -81,6 +89,7 @@ export const Formulario = ({ setEstado, idMetro }) => {
             setTimeout(() => {
                 setMensaje(false);
                 setEstado(false);
+                resetForm();
             }, 1000);
         } catch (error) {
             console.log(error);
@@ -178,7 +187,7 @@ export const Formulario = ({ setEstado, idMetro }) => {
                 text-white uppercase font-bold rounded-lg 
                 hover:bg-red-900 cursor-pointer transition-all'
                 value={form.id ? "Actualizar ruta" : "Registrar ruta"} />
-            </Form>
+            </Form >
         </Formik>
     );
 };
